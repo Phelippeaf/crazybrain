@@ -1,0 +1,1240 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Fase</name>
+    <events>
+        <comment>Variaveis Status</comment>
+        <variable constant="0" name="Deboa" sid="194026956696532" static="0" type="number">100</variable>
+        <variable constant="0" name="AltDeboa" sid="739126772667146" static="0" type="number">0</variable>
+        <variable constant="0" name="Social" sid="474203534432673" static="0" type="number">100</variable>
+        <variable constant="0" name="AltSocial" sid="793203658403651" static="0" type="number">0</variable>
+        <variable constant="0" name="Merda" sid="811829293490497" static="0" type="number">100</variable>
+        <variable constant="0" name="AltMerda" sid="467354605914693" static="0" type="number">0</variable>
+        <variable constant="0" name="Higiene" sid="356843755916337" static="0" type="number">100</variable>
+        <variable constant="0" name="AltHigiene" sid="515632724051069" static="0" type="number">0</variable>
+        <variable constant="0" name="Energia" sid="394699986104937" static="0" type="number">100</variable>
+        <variable constant="0" name="AltEnergia" sid="284131529519052" static="0" type="number">0</variable>
+        <variable constant="0" name="Fome" sid="849939877903793" static="0" type="number">100</variable>
+        <variable constant="0" name="AltFome" sid="739220534250345" static="0" type="number">0</variable>
+        <comment>Variaveis Relógio</comment>
+        <variable constant="0" name="Play" sid="385784934282561" static="0" type="number">0</variable>
+        <variable constant="0" name="Minutos" sid="295256916563632" static="0" type="number">0</variable>
+        <variable constant="0" name="Horas" sid="138532052640250" static="0" type="number">14</variable>
+        <variable constant="0" name="Dia" sid="117706347483442" static="0" type="number">1</variable>
+        <variable constant="0" name="RelogioParado" sid="308006884345725" static="0" type="number">0</variable>
+        <comment>Variaveis Menu</comment>
+        <variable constant="0" name="Status" sid="915240485202665" static="0" type="number">1</variable>
+        <variable constant="0" name="EstadoMenu" sid="886276888349828" static="0" type="number">1</variable>
+        <comment>Variaveis Ação</comment>
+        <variable constant="0" name="acao" sid="687363843322241" static="0" type="number">0</variable>
+        <variable constant="0" name="Carta1" sid="108034333036852" static="0" type="number">0</variable>
+        <variable constant="0" name="Carta2" sid="129939981928733" static="0" type="number">0</variable>
+        <variable constant="0" name="Carta3" sid="451915266326756" static="0" type="number">0</variable>
+        <event-group description="" sid="579002434319744" title="Menu">
+            <sub-events>
+                <event-block sid="233293820111290">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="364532909712472" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">MenuBtB</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="581084416659848" type="System">
+                            <param id="0" name="Variable">EstadoMenu</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="796030498972516">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="565168362079433" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">MenuBt</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="960388581691524" type="System">
+                            <param id="0" name="Variable">EstadoMenu</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="851032253533630">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="219913531342097" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">Status</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="175947301309105" type="System">
+                            <param id="0" name="Variable">Status</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="862439142024006" type="System">
+                            <param id="0" name="Variable">Status</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="104765130323834">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="266719364562493" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">Status</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="735081570127483" type="System">
+                            <param id="0" name="Variable">Status</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="847812882781829" type="System">
+                            <param id="0" name="Variable">Status</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="287574701093330">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="339930067964458" type="System">
+                            <param id="0" name="Variable">Status</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-24" name="Move to top" sid="144217284910385" type="MenuBt" />
+                        <action id="-15" name="Set visible" sid="593832970936963" type="Fome">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="924150454326334" type="Deboa">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="866801491047857" type="Coco">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="975890765016179" type="Energia">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="498221766690474" type="Higiene">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="566371149786073" type="Friend">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="468168459900019" type="StatusBarra">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="1" name="Set visible" sid="751548747101114" type="DeboaBar">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="1" name="Set visible" sid="547039967743515" type="EnergiaBar">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="1" name="Set visible" sid="377086317682590" type="FomeBar">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="1" name="Set visible" sid="826095069656453" type="HigieneBar">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="1" name="Set visible" sid="629579858689834" type="MerdaBar">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="1" name="Set visible" sid="270262395084953" type="SocialBar">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="194143718519937">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="289826714008074" type="System">
+                            <param id="0" name="Variable">Status</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-24" name="Move to top" sid="429096490311710" type="MenuBtB" />
+                        <action id="-15" name="Set visible" sid="280581748056853" type="Fome">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="652014698129954" type="Deboa">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="365875321787022" type="Coco">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="611580124226003" type="Energia">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="389824877360786" type="Higiene">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="967056789585855" type="Friend">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="999286222495577" type="StatusBarra">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="1" name="Set visible" sid="828692291450795" type="DeboaBar">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="1" name="Set visible" sid="869611966619379" type="EnergiaBar">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="1" name="Set visible" sid="750428929473347" type="FomeBar">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="1" name="Set visible" sid="870251396301543" type="HigieneBar">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="1" name="Set visible" sid="891665852726426" type="MerdaBar">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="1" name="Set visible" sid="770907703547666" type="SocialBar">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="121187502129012">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="960852333190824" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">Pause</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="434711191827439" type="System">
+                            <param id="0" name="Variable">Play</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="378962038480877">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="580532948889473" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">Play</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="875210076739407" type="System">
+                            <param id="0" name="Variable">RelogioParado</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="767567255741145" type="System">
+                            <param id="0" name="Variable">Play</param>
+                            <param id="1" name="Value">1/3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="520697046774860">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="190494261732015" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">Adiantar</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="700267105134068" type="System">
+                            <param id="0" name="Variable">RelogioParado</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="866573129513121" type="System">
+                            <param id="0" name="Variable">Play</param>
+                            <param id="1" name="Value">1/9</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="468031713339481">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="377269729144900" type="System">
+                            <param id="0" name="Variable">EstadoMenu</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="658387784172394" type="MenuBtB">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="680841406058941" type="MenuBt">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="680020748242929" type="Barra">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="134618281143300" type="Social">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="967027437721821" type="Status">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="991057988226310" type="Trabalho">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="640464128916580" type="Acao">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="303540773001889">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="303338848781820" type="System">
+                            <param id="0" name="Variable">EstadoMenu</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="167584012810142" type="MenuBtB">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="428387786177951" type="MenuBt">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="801341328648756" type="Barra">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="318865391657242" type="Social">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="614662469763560" type="Status">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="256753172750945" type="Trabalho">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="507337176130925" type="Acao">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="706682819910312" title="Relógio">
+            <sub-events>
+                <event-block sid="881560318994156">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="182994052014349" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="921177334166880" type="Hora">
+                            <param id="0" name="Text"> &quot;&quot; &amp; Horas</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="342904769177538">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="160423790596378" type="System">
+                                    <param id="0" name="Variable">Minutos</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Value">10</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="690371326611598" type="Minutos">
+                                    <param id="0" name="Text">&quot;0&quot; &amp; Minutos</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="601007273910134">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="906054935678247" type="System">
+                                    <param id="0" name="Variable">Minutos</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">10</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="184198854627527" type="Minutos">
+                                    <param id="0" name="Text">&quot;&quot; &amp; Minutos</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="170487183072603">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="441097102500955" type="System">
+                            <param id="0" name="Variable">Minutos</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">60</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="244528279221035" type="System">
+                            <param id="0" name="Variable">Horas</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="927130857969444" type="System">
+                            <param id="0" name="Variable">Minutos</param>
+                            <param id="1" name="Value">60</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="307909071619208">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="566710292446768" type="System">
+                            <param id="0" name="Interval (seconds)">2*Play</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="451636415602481" type="System">
+                            <param id="0" name="Variable">Play</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="805617938320739" type="System">
+                            <param id="0" name="Variable">Minutos</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="421002724396421" type="System">
+                            <param id="0" name="Variable">Fome</param>
+                            <param id="1" name="Value">0.5</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="919172246332233" type="System">
+                            <param id="0" name="Variable">Higiene</param>
+                            <param id="1" name="Value">0.2</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="581557185487675" type="System">
+                            <param id="0" name="Variable">Merda</param>
+                            <param id="1" name="Value">0.3</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="618952890924928" type="System">
+                            <param id="0" name="Variable">Social</param>
+                            <param id="1" name="Value">0.1</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="111364004792890" type="System">
+                            <param id="0" name="Variable">Energia</param>
+                            <param id="1" name="Value">0.2</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="453126913654483" type="System">
+                            <param id="0" name="Variable">Deboa</param>
+                            <param id="1" name="Value">0.3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="119080044138916">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="745682219741441" type="System">
+                            <param id="0" name="Variable">Horas</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">20</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="122632387359719" type="System">
+                            <param id="0" name="Variable">Minutos</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">20</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="350835226909149" type="System">
+                            <param id="0" name="Variable">Play</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="532907422167684" type="System">
+                            <param id="0" name="Variable">RelogioParado</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="256624780867157" title="Progresso">
+            <sub-events>
+                <event-block sid="746780888543056">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="637852575072162" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="3" name="Set progress" sid="664813277439113" type="FomeBar">
+                            <param id="0" name="Value">Fome</param>
+                        </action>
+                        <action id="3" name="Set progress" sid="298549027341525" type="DeboaBar">
+                            <param id="0" name="Value">Deboa</param>
+                        </action>
+                        <action id="3" name="Set progress" sid="511293278976407" type="EnergiaBar">
+                            <param id="0" name="Value">Energia</param>
+                        </action>
+                        <action id="3" name="Set progress" sid="516583682610748" type="HigieneBar">
+                            <param id="0" name="Value">Higiene</param>
+                        </action>
+                        <action id="3" name="Set progress" sid="113420953639342" type="MerdaBar">
+                            <param id="0" name="Value">Merda</param>
+                        </action>
+                        <action id="3" name="Set progress" sid="864856144661678" type="SocialBar">
+                            <param id="0" name="Value">Social</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="145166262801107" title="Horario">
+            <sub-events>
+                <event-block sid="187889716040185">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="125997331330968" type="System">
+                            <param id="0" name="Variable">acao</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="552310818293611" type="System">
+                            <param id="0" name="Variable">Carta1</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="589758903342869" type="System">
+                            <param id="0" name="Variable">Carta2</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="222878183917319" type="System">
+                            <param id="0" name="Variable">Carta3</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="587083274527303" type="Banheiro">
+                            <param id="0" name="X">0</param>
+                            <param id="1" name="Y">1000</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="909150775625627" type="Comer">
+                            <param id="0" name="X">0</param>
+                            <param id="1" name="Y">1000</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="355757623500029" type="Falarcamina">
+                            <param id="0" name="X">0</param>
+                            <param id="1" name="Y">1000</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="265064316799641" type="Fumar">
+                            <param id="0" name="X">0</param>
+                            <param id="1" name="Y">1000</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="172831489569914" type="VeTV">
+                            <param id="0" name="X">0</param>
+                            <param id="1" name="Y">1000</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="464767660326398">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="377979935828291" type="System">
+                            <param id="0" name="Variable">Horas</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">15</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="347504106604857" type="System">
+                            <param id="0" name="Variable">Minutos</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">15</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="115860301299684" type="System">
+                            <param id="0" name="Variable">acao</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="818035171096373" type="System">
+                            <param id="0" name="Variable">RelogioParado</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="449829083243282" type="System">
+                            <param id="0" name="Variable">Play</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="363903712325754" title="Ações">
+            <sub-events>
+                <event-block sid="566765318481103">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="122786226935621" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="194325692564767" type="TextoInicial">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="160277028864752" type="CenarioCantina">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="859906558741029" type="CenarioBanheiro">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="299996516489729" type="CenarioCamina">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="994141525623708" type="CenarioBCC">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="192653451350067" type="CenarioVeTV">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="706733544042974">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="135771684335894" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">Comer</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="239743407213897" type="System">
+                            <param id="0" name="Variable">Minutos</param>
+                            <param id="1" name="Value">round(random(5,10))</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="123063272085829" type="System">
+                            <param id="0" name="Variable">AltFome</param>
+                            <param id="1" name="Value">round(random(20,50))</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="541201512440386" type="System">
+                            <param id="0" name="Variable">Fome</param>
+                            <param id="1" name="Value">AltFome</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="886625572209223" type="System">
+                            <param id="0" name="Variable">AltHigiene</param>
+                            <param id="1" name="Value">round(random(-10,0))</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="933527312243677" type="System">
+                            <param id="0" name="Variable">Higiene</param>
+                            <param id="1" name="Value">AltHigiene</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="515460041357785" type="System">
+                            <param id="0" name="Variable">AltMerda</param>
+                            <param id="1" name="Value">round(random(-15,-5))</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="562724227512548" type="System">
+                            <param id="0" name="Variable">Merda</param>
+                            <param id="1" name="Value">AltMerda</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="244880420383486" type="CenarioCantina">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-8" name="Scroll to object" sid="713727906098472" type="System">
+                            <param id="0" name="Object">acaocam</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="462042656935536" type="System">
+                            <param id="0" name="Seconds">5</param>
+                        </action>
+                        <action id="-8" name="Scroll to object" sid="461329252871012" type="System">
+                            <param id="0" name="Object">jogoCam</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="691603882224608" type="System">
+                            <param id="0" name="Variable">RelogioParado</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="255486713532295" type="CenarioCantina">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="824062198809239" type="System">
+                            <param id="0" name="Variable">acao</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="127630695083136">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="500437147784010" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">Banheiro</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="370983650415906" type="System">
+                            <param id="0" name="Variable">Minutos</param>
+                            <param id="1" name="Value">round(random(5,10))</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="947651779855411" type="System">
+                            <param id="0" name="Variable">AltMerda</param>
+                            <param id="1" name="Value">round(random(20,50))</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="808477340441480" type="System">
+                            <param id="0" name="Variable">Merda</param>
+                            <param id="1" name="Value">AltMerda</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="820652149025573" type="System">
+                            <param id="0" name="Variable">AltHigiene</param>
+                            <param id="1" name="Value">round(random(-10,0))</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="796166300369908" type="System">
+                            <param id="0" name="Variable">Higiene</param>
+                            <param id="1" name="Value">AltHigiene</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="825441978815011" type="System">
+                            <param id="0" name="Variable">AltEnergia</param>
+                            <param id="1" name="Value">round(random(-5,0))</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="843909007909509" type="System">
+                            <param id="0" name="Variable">Energia</param>
+                            <param id="1" name="Value">AltEnergia</param>
+                        </action>
+                        <action id="-8" name="Scroll to object" sid="126617980638975" type="System">
+                            <param id="0" name="Object">acaocam</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="175351328579605" type="CenarioBanheiro">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="984991383031091" type="System">
+                            <param id="0" name="Seconds">5</param>
+                        </action>
+                        <action id="-8" name="Scroll to object" sid="275653398151593" type="System">
+                            <param id="0" name="Object">jogoCam</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="479433054249873" type="System">
+                            <param id="0" name="Variable">RelogioParado</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="505050009203600" type="CenarioBanheiro">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="161763530650102" type="System">
+                            <param id="0" name="Variable">acao</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="675586138602868">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="292219927375888" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">Falarcamina</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="349703712879165" type="System">
+                            <param id="0" name="Variable">Minutos</param>
+                            <param id="1" name="Value">round(random(5,10))</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="114026965063219" type="System">
+                            <param id="0" name="Variable">AltSocial</param>
+                            <param id="1" name="Value">round(random(20,50))</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="542835972707041" type="System">
+                            <param id="0" name="Variable">Social</param>
+                            <param id="1" name="Value">AltSocial</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="230330241571516" type="System">
+                            <param id="0" name="Variable">AltFome</param>
+                            <param id="1" name="Value">round(random(-10,0))</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="869112219105641" type="System">
+                            <param id="0" name="Variable">Fome</param>
+                            <param id="1" name="Value">AltFome</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="582645264972012" type="System">
+                            <param id="0" name="Variable">AltEnergia</param>
+                            <param id="1" name="Value">round(random(-5,0))</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="504735334983896" type="System">
+                            <param id="0" name="Variable">Energia</param>
+                            <param id="1" name="Value">AltEnergia</param>
+                        </action>
+                        <action id="-8" name="Scroll to object" sid="805786053901026" type="System">
+                            <param id="0" name="Object">acaocam</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="129833796307713" type="CenarioCamina">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="734824700164533" type="System">
+                            <param id="0" name="Seconds">5</param>
+                        </action>
+                        <action id="-8" name="Scroll to object" sid="337090185554538" type="System">
+                            <param id="0" name="Object">jogoCam</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="254626865751079" type="System">
+                            <param id="0" name="Variable">RelogioParado</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="763484513597260" type="CenarioCamina">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="154794533095142" type="System">
+                            <param id="0" name="Variable">acao</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="826548924025360">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="860285463317949" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">Fumar</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="529199769436024" type="System">
+                            <param id="0" name="Variable">Minutos</param>
+                            <param id="1" name="Value">round(random(5,10))</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="474872624598126" type="System">
+                            <param id="0" name="Variable">AltDeboa</param>
+                            <param id="1" name="Value">round(random(20,50))</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="808501157394328" type="System">
+                            <param id="0" name="Variable">Deboa</param>
+                            <param id="1" name="Value">AltDeboa</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="110688485921450" type="System">
+                            <param id="0" name="Variable">AltFome</param>
+                            <param id="1" name="Value">round(random(-10,0))</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="163182741062963" type="System">
+                            <param id="0" name="Variable">Fome</param>
+                            <param id="1" name="Value">AltFome</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="402250307173462" type="System">
+                            <param id="0" name="Variable">AltEnergia</param>
+                            <param id="1" name="Value">round(random(-5,0))</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="781368201425009" type="System">
+                            <param id="0" name="Variable">Energia</param>
+                            <param id="1" name="Value">AltEnergia</param>
+                        </action>
+                        <action id="-8" name="Scroll to object" sid="118465046432011" type="System">
+                            <param id="0" name="Object">acaocam</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="619887157679244" type="CenarioBCC">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="101185145676077" type="System">
+                            <param id="0" name="Seconds">5</param>
+                        </action>
+                        <action id="-8" name="Scroll to object" sid="472281610931814" type="System">
+                            <param id="0" name="Object">jogoCam</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="902951196953318" type="System">
+                            <param id="0" name="Variable">RelogioParado</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="682105762121477" type="CenarioBCC">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="940593585440548" type="System">
+                            <param id="0" name="Variable">acao</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="652929351215947">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="540351478585158" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">VeTV</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="188546025241236" type="System">
+                            <param id="0" name="Variable">Minutos</param>
+                            <param id="1" name="Value">round(random(5,10))</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="206386322525231" type="System">
+                            <param id="0" name="Variable">AltDeboa</param>
+                            <param id="1" name="Value">round(random(20,50))</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="930214030491779" type="System">
+                            <param id="0" name="Variable">Deboa</param>
+                            <param id="1" name="Value">AltDeboa</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="988026774914102" type="System">
+                            <param id="0" name="Variable">AltFome</param>
+                            <param id="1" name="Value">round(random(-10,0))</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="915084672108766" type="System">
+                            <param id="0" name="Variable">Fome</param>
+                            <param id="1" name="Value">AltFome</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="898845750098233" type="System">
+                            <param id="0" name="Variable">AltEnergia</param>
+                            <param id="1" name="Value">round(random(-5,0))</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="483131235034514" type="System">
+                            <param id="0" name="Variable">Energia</param>
+                            <param id="1" name="Value">AltEnergia</param>
+                        </action>
+                        <action id="-8" name="Scroll to object" sid="557361068757092" type="System">
+                            <param id="0" name="Object">acaocam</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="395434354227105" type="CenarioVeTV">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="601158618196500" type="System">
+                            <param id="0" name="Seconds">5</param>
+                        </action>
+                        <action id="-8" name="Scroll to object" sid="931362464932198" type="System">
+                            <param id="0" name="Object">jogoCam</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="242574580292557" type="System">
+                            <param id="0" name="Variable">RelogioParado</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="492440923549125" type="CenarioVeTV">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="128262317083386" type="System">
+                            <param id="0" name="Variable">acao</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="142191976829512">
+                    <conditions>
+                        <condition id="0" name="On clicked" sid="919789164977486" type="btnAtrasar" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="885223791160078" type="TextoInicial">
+                            <param id="0" name="Text">&quot;Você atrasou 15 minutos&quot;</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="227624118833146" type="System">
+                            <param id="0" name="Variable">Minutos</param>
+                            <param id="1" name="Value">15</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="755675148167802">
+                    <conditions>
+                        <condition id="0" name="On clicked" sid="856084161431823" type="btnNAtrasar" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="401384153432687" type="TextoInicial">
+                            <param id="0" name="Text">&quot;Você acabou se atrasando pq um mendigo tentou te assaltar na entrada da rua!&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="915983446100545">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="944482180927709" type="System">
+                            <param id="0" name="Variable">acao</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="716314649099312">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="265464265690082" type="System">
+                                    <param id="0" name="Variable">Carta1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="955907986129337" type="System">
+                                    <param id="0" name="Variable">Carta2</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="159123400124614" type="System">
+                                    <param id="0" name="Variable">Carta3</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="593621903762256" type="System">
+                                    <param id="0" name="Variable">Carta1</param>
+                                    <param id="1" name="Value">round(random(1,5))</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="660520248716822" type="System">
+                                    <param id="0" name="Variable">Carta2</param>
+                                    <param id="1" name="Value">round(random(1,5))</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="650569540664394" type="System">
+                                    <param id="0" name="Variable">Carta3</param>
+                                    <param id="1" name="Value">round(random(1,5))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="416754482269222">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="336530381308473" type="System">
+                                    <param id="0" name="Variable">Carta2</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">Carta1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="528641507082390" type="System">
+                                    <param id="0" name="Variable">Carta2</param>
+                                    <param id="1" name="Value">round(random(1,5))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="886204045571452">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="523429609306844" type="System">
+                                    <param id="0" name="Variable">Carta3</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">Carta1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="529291804569324" type="System">
+                                    <param id="0" name="Variable">Carta3</param>
+                                    <param id="1" name="Value">round(random(1,5))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="594364189806275">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="262007375419769" type="System">
+                                    <param id="0" name="Variable">Carta3</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">Carta2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="471306307471921" type="System">
+                                    <param id="0" name="Variable">Carta3</param>
+                                    <param id="1" name="Value">round(random(1,5))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="865132979959107">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="220402467458890" type="System">
+                                    <param id="0" name="Variable">Carta1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set position to another object" sid="114858551698345" type="Banheiro">
+                                    <param id="0" name="Object">Carta1</param>
+                                    <param id="1" name="Image point (optional)">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="982838811188436">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="137391990305707" type="System">
+                                    <param id="0" name="Variable">Carta1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set position to another object" sid="354646443233972" type="Comer">
+                                    <param id="0" name="Object">Carta1</param>
+                                    <param id="1" name="Image point (optional)">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="553791109290836">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="495489493078724" type="System">
+                                    <param id="0" name="Variable">Carta1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set position to another object" sid="451958740228900" type="Falarcamina">
+                                    <param id="0" name="Object">Carta1</param>
+                                    <param id="1" name="Image point (optional)">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="681801107894229">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="446295480024241" type="System">
+                                    <param id="0" name="Variable">Carta1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set position to another object" sid="143155704510311" type="Fumar">
+                                    <param id="0" name="Object">Carta1</param>
+                                    <param id="1" name="Image point (optional)">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="488722856737430">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="698132519381156" type="System">
+                                    <param id="0" name="Variable">Carta1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set position to another object" sid="500274898973395" type="VeTV">
+                                    <param id="0" name="Object">Carta1</param>
+                                    <param id="1" name="Image point (optional)">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="532911121823671">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="792339933109342" type="System">
+                                    <param id="0" name="Variable">Carta2</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set position to another object" sid="304820556299311" type="Banheiro">
+                                    <param id="0" name="Object">Carta2</param>
+                                    <param id="1" name="Image point (optional)">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="225432522234176">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="311997363842402" type="System">
+                                    <param id="0" name="Variable">Carta2</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set position to another object" sid="307987160119057" type="Comer">
+                                    <param id="0" name="Object">Carta2</param>
+                                    <param id="1" name="Image point (optional)">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="847120722657051">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="617986045077740" type="System">
+                                    <param id="0" name="Variable">Carta2</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set position to another object" sid="111501476508923" type="Falarcamina">
+                                    <param id="0" name="Object">Carta2</param>
+                                    <param id="1" name="Image point (optional)">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="573353318797245">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="877232894771505" type="System">
+                                    <param id="0" name="Variable">Carta2</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set position to another object" sid="383745927712674" type="Fumar">
+                                    <param id="0" name="Object">Carta2</param>
+                                    <param id="1" name="Image point (optional)">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="453629431480205">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="585983403029112" type="System">
+                                    <param id="0" name="Variable">Carta2</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set position to another object" sid="593511487273290" type="VeTV">
+                                    <param id="0" name="Object">Carta2</param>
+                                    <param id="1" name="Image point (optional)">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="202778069362300">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="137174135498363" type="System">
+                                    <param id="0" name="Variable">Carta3</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set position to another object" sid="804570712467319" type="Banheiro">
+                                    <param id="0" name="Object">Carta3</param>
+                                    <param id="1" name="Image point (optional)">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="151204317663141">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="158383639556071" type="System">
+                                    <param id="0" name="Variable">Carta3</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set position to another object" sid="462767078406479" type="Comer">
+                                    <param id="0" name="Object">Carta3</param>
+                                    <param id="1" name="Image point (optional)">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="498628763713650">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="317340058987271" type="System">
+                                    <param id="0" name="Variable">Carta3</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set position to another object" sid="381307048924578" type="Falarcamina">
+                                    <param id="0" name="Object">Carta3</param>
+                                    <param id="1" name="Image point (optional)">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="975575906190229">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="247190995976401" type="System">
+                                    <param id="0" name="Variable">Carta3</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set position to another object" sid="938134631140879" type="Fumar">
+                                    <param id="0" name="Object">Carta3</param>
+                                    <param id="1" name="Image point (optional)">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="822614701791756">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="667872292280909" type="System">
+                                    <param id="0" name="Variable">Carta3</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set position to another object" sid="746635467270556" type="VeTV">
+                                    <param id="0" name="Object">Carta3</param>
+                                    <param id="1" name="Image point (optional)">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

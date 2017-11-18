@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Inicial</name>
+    <events>
+        <event-block sid="464067055829495">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="676479912486193" type="System" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="993096545022560" type="ChaosCenter">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="377861017929121" type="Start">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="998913801176432" type="Monkey">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="850775896358039" type="System">
+                    <param id="0" name="Seconds">5</param>
+                </action>
+                <action id="-15" name="Set visible" sid="678072122356724" type="CrazyBrain">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="162071806193607" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="903135710237987" type="Monkey">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="948874387019926" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="215229284174493" type="ChaosCenter">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="889639314726428" type="System">
+                    <param id="0" name="Seconds">2</param>
+                </action>
+                <action id="-15" name="Set visible" sid="669319735711407" type="Start">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="667537486404000">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="644476805749180" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Start</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="130234990251804" type="Start" />
+            </conditions>
+            <actions>
+                <action id="-25" name="Go to layout (by name)" sid="853178091569091" type="System">
+                    <param id="0" name="Layout">&quot;Fase&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
